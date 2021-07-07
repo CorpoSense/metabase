@@ -1,5 +1,8 @@
 # Metabase
 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://github.com/CorpoSense/metabase/tree/gitpod-setup)
+
+
 Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.
 
 ![Metabase Product Screenshot](docs/metabase-product-screenshot.png)
@@ -87,7 +90,7 @@ Metabase also allows you to hit our Query API directly from Javascript to integr
 
 # License
 
-This repository contains the source code for both the Open Source edition of Metabase, released under the AGPL, as well as the commercial edition of Metabase Enterprise, released under the Metabase Commercial Software License. 
+This repository contains the source code for both the Open Source edition of Metabase, released under the AGPL, as well as the commercial edition of Metabase Enterprise, released under the Metabase Commercial Software License.
 
 See [LICENSE.txt](./LICENSE.txt) for details.
 

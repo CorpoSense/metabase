@@ -1,0 +1,22 @@
+image:
+  file: .gitpod.Dockerfile
+
+
+# exposed ports
+ports:
+- port: 5432 # PostgreSQL
+  onOpen: notify
+- port: 8080 # preview on browser
+  onOpen: open-browser
+
+tasks:
+  - init: |
+      echo "Building from source"
+      ./bin/build
+    command: |
+      ls target/uberjar
+  - command: gp await-port 8080 && gp preview "$(gp url 8080)"
+
+# You can download and run metabase from
+# wget https://downloads.metabase.com/v0.39.4/metabase.jar -o metabase.jar
+# java -jar metabase.jar
