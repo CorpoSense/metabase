@@ -1,6 +1,6 @@
 # Metabase
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://github.com/CorpoSense/metabase/tree/gitpod-setup)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/CorpoSense/metabase/tree/gitpod-setup)
 
 
 Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.
