@@ -4,8 +4,6 @@ image:
 
 # exposed ports
 ports:
-- port: 5432 # PostgreSQL
-  onOpen: notify
 - port: 8080 # preview on browser
   onOpen: open-browser
 
