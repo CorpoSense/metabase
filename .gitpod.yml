@@ -4,17 +4,18 @@ image:
 
 # exposed ports
 ports:
-- port: 8080 # preview on browser
+- port: 3000 # preview on browser
   onOpen: open-browser
 
 tasks:
   - init: |
-      echo "Building from source"
+      echo "Building from source..."
       ./bin/build
     command: |
       ls target/uberjar
-  - command: gp await-port 8080 && gp preview "$(gp url 8080)"
+      java -jar target/uberjar/metabase.jar
+  - command: gp await-port 3000 && gp preview "$(gp url 3000)"
 
 # You can download and run metabase from
-# wget https://downloads.metabase.com/v0.39.4/metabase.jar -o metabase.jar
+# wget https://downloads.metabase.com/v0.39.4/metabase.jar -O metabase.jar
 # java -jar metabase.jar
