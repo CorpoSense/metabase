@@ -12,9 +12,8 @@ tasks:
       echo "Building from source..."
       ./bin/build
     command: |
-      ls target/uberjar
-      java -jar target/uberjar/metabase.jar
-  - command: gp await-port 3000 && gp preview "$(gp url 3000)"
+      [ -f target/uberjar/metabase.jar ] && java -jar target/uberjar/metabase.jar
+  - command: gp await-port 3000 && sleep 3 && gp preview "$(gp url 3000)"
 
 # You can download and run metabase from
 # wget https://downloads.metabase.com/v0.39.4/metabase.jar -O metabase.jar
